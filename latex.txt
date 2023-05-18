@@ -1,0 +1,454 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx} % Required to insert images
+\usepackage{setspace} % Required to set line spacing
+\usepackage{fancyhdr}
+\usepackage[absolute]{textpos}
+\usepackage{times}
+\usepackage[left=1.5cm,right=1.5cm,top=2.5cm,bottom=1.25cm]{geometry}
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx} % Required to insert images
+\usepackage{setspace} % Required to set line spacing
+\usepackage{dirtytalk}
+\usepackage[absolute]{textpos}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+\usepackage[left=3.5cm,right=1.25cm,top=2.5cm,bottom=1.25cm]{geometry}
+\begin{document}
+\onehalfspacing
+\thispagestyle{empty}
+\begin{center}
+{\fontfamily{ptm}\selectfont\bfseries\uppercase{\fontsize{16pt}{0.5}\selectfont MOVIE WEBSITE}}\\
+\vspace{4\baselineskip}
+{\fontfamily{ptm}\selectfont\bfseries\lowercase{\fontsize{12pt}{1.5}\selectfont by}}\\
+\vspace{1\baselineskip}
+\textbf{\textit{ARUGONDA GIRISH KUMAR}}  \hspace{3cm}\textbf{\textit{421111}} \\
+\vspace{0.5\baselineskip}
+\textbf{\textit{NARASIMHA TEJA}} \hspace{3cm} \textbf{\textit{421163}} \\
+\vspace{2\baselineskip}
+{\fontfamily{ptm}\selectfont\itshape\bfseries{\fontsize{12pt}{1.5}\selectfont Under the guidance of}}\\
+\vspace{1\baselineskip}
+{\fontfamily{ptm}\selectfont\bfseries{\fontsize{12pt}{1.5}\selectfont Dr.  MG KARTHIKEYAN}}\\
+\vspace{3\baselineskip}
+{\includegraphics[height=2in]{logo.jpg}}\\
+\vspace{5\baselineskip}
+{\fontfamily{ptm}\selectfont\bfseries\uppercase{\fontsize{14pt}{1.5}\centering \textbf{DEPARTMENT OF COMPUTER SCIENCE \& ENGINEERING}}}\\
+\vspace{0.5\baselineskip}
+{\fontfamily{ptm}\selectfont\bfseries\uppercase{\fontsize{14pt}{1.5}\centering NATIONAL INSTITUTE OF TECHNOLOGY ANDHRA PRADESH}}\\
+\vspace{0.5\baselineskip}
+{\fontfamily{ptm}\selectfont\bfseries\uppercase{\fontsize{14pt}{1.5}\centering TADEPALLIGUDEM-534101, INDIA}}\\
+\vspace{0.5\baselineskip}
+{\fontfamily{ptm}\selectfont\bfseries\uppercase{\fontsize{14pt}{1.5}\centering APRIL 2023}}\\
+\end{center}
+\newpage
+\thispagestyle{empty}
+left on purpose
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+{\fontsize{16pt}{1.5}\selectfont\textbf{\MakeUppercase{MOVIE WEBSITE}}}
+\end{center}
+\vspace{3\baselineskip}
+\begin{center}
+{\fontsize{12pt}{1.5}\selectfont\textbf{\textit{Thesis submitted to}}}\\
+{\fontsize{12pt}{1.5}\selectfont\textbf{\textit{National Institute of Technology Andhra Pradesh}}}\\
+{\fontsize{12pt}{1.5}\selectfont\textbf{\textit{for the award of the degree}}}
+\end{center}
+\begin{center}
+{\fontsize{12pt}{0.5}\selectfont\textit{of}}
+\end{center}
+
+\begin{center}
+{\fontsize{12pt}{0.5}\selectfont\textbf{\textit{Bachelor of Technology}}}
+\end{center}
+\begin{center}
+{\fontsize{12pt}{0.5}\selectfont\textbf{\textit{by}}}
+\end{center}
+\begin{center}
+{\fontfamily{ptm}\fontsize{12pt}{1.5}\selectfont\textbf{\textit{
+\textbf{\textit{ARUGONDA GIRISH KUMAR}}  \hspace{3cm} \textbf{\textit{421111}} \\
+\vspace{0.5\baselineskip}
+\textbf{\textit{NARASIMHA TEJA}} \hspace{3cm} \textbf{\textit{421163}} \\
+}}}
+\end{center}
+
+\begin{center}
+{\fontfamily{ptm}\selectfont\itshape\bfseries{\fontsize{12pt}{1.5}\selectfont Under the guidance of}}\\
+\end{center}
+\vspace{2\baselineskip}
+\begin{center}
+{\fontsize{12pt}{1.5}\selectfont{\textbf{Dr. MG KARTHIKEYAN}}}
+\end{center}
+\vspace{1\baselineskip}
+\begin{center}
+\includegraphics[height=2in]{logo.jpg}
+\end{center}
+\vspace{3\baselineskip}
+\begin{center}
+{\fontsize{14pt}{1.5}\selectfont{\textbf{DEPARTMENT OF COMPUTER SCIENCE \& ENGINEERING}\\}
+\vspace{0.5\baselineskip}
+\makebox[\textwidth][c]{\textbf{NATIONAL INSTITUTE OF TECHNOLOGY ANDHRA PRADESH}}\\
+\vspace{0.5\baselineskip}
+\textbf{TADEPALLIGUDEM-534101, INDIA}\\
+\vspace{0.5\baselineskip}
+\textbf{\large APRIL 2023}\\}
+{\fontsize{10pt}{1.5}\selectfont{© 2023. All rights reserved to NIT Andhra Pradesh}}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\vspace*{5\baselineskip}
+{\fontsize{14pt}{1.5}\selectfont\textbf{\MakeUppercase{DECLARATION}}}
+\end{center}
+
+\vspace{4\baselineskip}
+{\fontsize{12pt}{1.5}\selectfont{
+I declare that this written submission represents my ideas in my own words and where others' ideas or words have been included, I have adequately cited and referenced the original sources. I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in my submission. I understand that any violation of the above will be cause for disciplinary action by the Institute and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.}}\\
+
+\vspace{5\baselineskip}
+
+\noindent ARUGONDA GIRISH KUMAR \hspace{7.8cm} NARASIMHA TEJA \\
+% \vspace{0.5\baselineskip}
+% \vspace{0.5\baselineskip}
+
+\noindent 421111 \hspace{11.7cm} 421163 \\
+
+% \vspace{0.5\baselineskip}
+% \vspace{0.5\baselineskip}
+\noindent Date:\underline{{\hspace{2cm}}} \hspace{10.1cm} Date:\underline{{\hspace{2cm}}} \\
+
+
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\vspace*{5\baselineskip}
+{\fontsize{14pt}{1.5}\selectfont\textbf{\MakeUppercase{CERTIFICATE}}}
+\end{center}
+
+\vspace{4\baselineskip}
+{\fontfamily{ptm}\fontsize{12pt}{1.5}{
+It is certified that the work contained in the thesis titled \say{\textbf{MOVIE WEBSITE}} by \say{ARUGONDA GIRISH KUMAR, bearing Roll No: 421111} and \say{NARASIMHA TEJA,bearing Roll No: 421163} has been carried out under my supervision and that this work has not been submitted elsewhere for a degree.}}
+
+\begin{textblock*}{\textwidth}(420pt,370pt)
+\hfill 
+\\
+\textbf{Signature}\\
+\textbf{Dr. MG KARTHIKEYAN}\\
+\textbf{Dept.CSE}\\
+\textbf{N.I.T. Andhra Pradesh}\\
+\textbf{April, 2023}
+\end{textblock*}
+\newpage
+\thispagestyle{empty}
+\fontfamily{ptm}\fontsize{14pt}{2}{
+\begin{abstract}
+\fontsize{12pt}{1.5}{
+A movie website can serve a variety of purposes, including:
+
+Movie Reviews: A movie website can provide reviews and ratings of new and old movies, helping users to make informed decisions about which movies to watch.
+
+Movie Trailers: A movie website can showcase trailers for upcoming movies, allowing users to get a sneak peek of what's to come.
+
+Showtimes and Locations: A movie website can provide information on showtimes and locations for movies playing in theaters, making it easy for users to find a screening near them.
+
+Streaming Information: A movie website can also provide information on where users can stream movies online, either for free or through subscription services like Netflix, Amazon Prime, or Hulu.
+
+Movie News: A movie website can serve as a source for movie news and industry updates, keeping users up-to-date on the latest releases, casting announcements, and behind-the-scenes stories.
+
+User Reviews and Ratings: A movie website can also allow users to share their own reviews and ratings of movies, helping other users to make more informed decisions.
+
+Interviews and Features: A movie website can also feature interviews with actors, directors, and other key players in the movie industry, as well as in-depth features on specific movies or genres.
+
+Movie Recommendations: A movie website can provide personalized movie recommendations based on users' preferences, helping users discover new movies that they might enjoy.
+
+Overall, a movie website can be a valuable resource for movie lovers, providing a wealth of information, entertainment, and community engagement
+
+
+}
+\end{abstract}}
+
+
+\newpage
+\begin{center}
+{\fontfamily{ptm}\fontsize{14}{1.5}\textbf{TABLE OF CONTENTS}}
+\end{center}
+\begin{tabular}{l@{\hspace{6cm}}r}
+\\ & \\
+\\ & Page
+\\ & No.\\
+Title & i \\
+Declaration & ii \\
+Certificate &  iii\\
+Acknowledgements & iv\\
+List of Figures & v\\
+List of Tables & vi\\
+List of Symbols and Abbreviations & vii\\
+Abstract & viii\\
+Table of Contents & ix\\
+\end{tabular}\\
+\begin{center}
+\tableofcontents
+\end{center}
+\section*{}
+\addcontentsline{toc}{section}{\fontsize{12}{}contents}
+
+
+\newpage
+\thispagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\lhead{\textbf{NIT ANDHRA PRADESH}}
+\cfoot{\thepage}
+\section{Introduction}
+Certainly! A movie website is an online platform that provides information about movies, including reviews, trailers, news, and other related content. These websites are designed to help movie enthusiasts stay up-to-date with the latest releases, as well as discover new movies they may be interested in.
+
+Some of the key features you might find on a movie website include:
+
+Movie reviews: Movie websites often feature reviews of the latest releases, as well as classic films. These reviews may be written by professional critics, as well as ordinary moviegoers.
+
+Trailers and teasers: Movie websites typically offer trailers and teasers for upcoming films, giving users a sneak peek at what they can expect from these movies.
+
+News and updates: Movie websites often provide news and updates about the movie industry, including announcements about new releases, casting news, and other related information.
+
+Interviews: Some movie websites feature interviews with directors, actors, and other industry insiders, giving users a behind-the-scenes look at the movie-making process.
+
+Recommendations: Many movie websites offer recommendations based on users' viewing history or preferences, helping users discover new movies they may enjoy.
+
+Overall, movie websites are a valuable resource for anyone who loves movies and wants to stay informed about the latest releases and industry news. Whether you're a casual moviegoer or a die-hard cinephile, there's something for everyone on these websites.
+    
+
+
+
+
+
+
+\newpage
+%\section{Technology stack}
+\section{Technology Stack}
+while building our website the components used are:
+    \vspace{0.5cm}
+  Front end development:
+    \begin{itemize}
+        \item HTML
+        \item css
+        \item java script
+        \item boot strap
+        
+    \end{itemize}
+  \vspace{0.5cm}
+  Back end development:
+  \begin{itemize}
+      \item API
+      \item json
+  \end{itemize}
+\newpage
+\section{Insights of our website}
+our portal contains the following components:
+\begin{itemize}
+    \item home page 
+    \item anime page 
+       \begin{itemize}
+           \item anime list
+           \item anime pictures
+       \end{itemize}
+    \item about us 
+    \item movies page
+\end{itemize}
+
+  
+
+
+
+
+
+
+
+
+\subsection{Benefits of using a movie website}
+There are several benefits to using a movie website, including:
+
+Convenience: Movie websites make it easy to browse and watch movies from the comfort of your own home, without the need to physically go to a theater or rental store.
+
+Variety: Movie websites offer a wide range of movies from different genres, languages, and countries, giving you the opportunity to discover new and diverse content.
+
+Accessibility: With movie websites, you can watch movies anytime, anywhere, as long as you have an internet connection and a compatible device.
+
+Affordability: Many movie websites offer free or low-cost movie streaming options, which can be more affordable than buying or renting physical copies of movies.
+
+Customization: Some movie websites allow you to create personalized watchlists, rate movies, and receive recommendations based on your viewing history, which can help you discover new movies that you might enjoy.
+
+Overall, movie websites can provide a convenient, affordable, and customizable way to enjoy movies and discover new content..
+
+\subsection{Drawbacks of  a movie website }
+While movie websites offer several benefits, there are also some drawbacks to consider, including:
+
+Quality and reliability: The quality of the streaming content on movie websites can vary, and some websites may be more reliable than others. Additionally, streaming may be affected by internet connectivity issues, causing buffering or interruptions.
+
+Legal and ethical concerns: Not all movies available on movie websites are obtained legally or ethically, which raises concerns about piracy and copyright infringement.
+
+Limited availability: Some movies may not be available on certain movie websites due to licensing agreements or other restrictions.
+
+Security risks: Movie websites may pose security risks, such as malware or viruses, which can harm your device or compromise your personal information.
+
+Subscription costs: Some movie websites may require a subscription fee or charge for individual movie rentals or purchases, which can add up over time.
+
+Overall, while movie websites can offer a convenient way to watch movies and discover new content, it's important to consider these drawbacks and choose a reputable website to ensure a safe and enjoyable streaming experience.
+
+
+\newpage
+
+\subsection{Best Practices for Using a  movie website}
+
+To get the most out of a movie website, here are some tips onty how to use it:
+
+Choose a reputable website: Look for a well-established and trusted movie website with a good reputation for quality, reliability, and legal compliance.
+
+Use a reliable internet connection: A stable and fast internet connection is crucial for smooth streaming, so use a reliable internet service provider and avoid streaming during peak internet usage hours.
+
+Check the movie details: Before watching a movie, check the movie details such as genre, rating, duration, and language to make sure it meets your preferences.
+
+Use filters and search tools: Many movie websites offer filters and search tools to help you find movies that match your preferences. Use these tools to narrow down your search and find the perfect movie for you.
+
+Read reviews and ratings: Read reviews and ratings from other users to get an idea of the movie's quality, storyline, and performances.
+
+Protect your device and personal information: Use antivirus software and avoid entering personal information on movie websites to protect your device and personal information from potential security threats.
+
+Enjoy responsibly: Finally, enjoy watching movies on the website responsibly, and be respectful of the website's terms and conditions, copyright laws, and ethical standards.
+
+
+
+\newpage
+\section{NETFLIX-a referencial application}
+Netflix is a popular streaming service that allows users to watch TV shows, movies, and documentaries on demand. Founded in 1997 as a DVD-by-mail rental service, it has since evolved to become one of the most popular streaming platforms in the world. With over 200 million subscribers in over 190 countries, Netflix offers a wide variety of content for its users to enjoy.
+
+One of the key factors in Netflix's success has been its focus on original content. The company has invested heavily in producing its own TV shows and movies, including popular series like "Stranger Things," "The Crown," and "Narcos." By creating its own content, Netflix is able to differentiate itself from other streaming services and offer unique and exclusive content to its users.
+
+In addition to its original content, Netflix also offers a vast library of licensed movies and TV shows from other studios and networks. This includes popular series like "Breaking Bad," "The Office," and "Friends," as well as a wide range of movies in various genres.
+
+Netflix is also known for its personalized recommendations, which are based on a user's viewing history and ratings. The company uses machine learning algorithms to analyze user data and suggest content that is likely to be of interest to them. This helps users discover new content and makes it easier to find something to watch.
+
+Another feature that sets Netflix apart from other streaming services is its ability to offer different subscription plans. Users can choose between three different plans: basic, standard, and premium. The basic plan offers SD quality streaming and allows users to stream on one device at a time. The standard plan offers HD quality streaming and allows users to stream on two devices simultaneously. The premium plan offers 4K Ultra HD quality streaming and allows users to stream on up to four devices at once.
+
+Netflix has also expanded its offerings beyond traditional TV shows and movies. The company has produced a number of popular documentaries, including "Tiger King" and "Making a Murderer," as well as stand-up comedy specials featuring comedians like Dave Chappelle and Ellen DeGeneres. It has also dabbled in interactive programming, with shows like "Bandersnatch" and "You vs. Wild" allowing users to choose their own adventure.
+
+Finally, Netflix has been a pioneer in the way it distributes its content. In addition to streaming, the company has experimented with releasing entire seasons of TV shows all at once, rather than airing episodes weekly. This has become known as the "binge-watching" model and has been adopted by other streaming services and networks.
+
+Overall, Netflix has revolutionized the way we consume and enjoy TV shows and movies. Its focus on original content, personalized recommendations, and flexible subscription plans has made it a popular choice for viewers around the world.
+.
+
+
+
+
+
+
+
+
+
+\newpage
+\section{AmazonPrimeVideo - another referential website}
+Amazon Prime Video is a streaming service offered by Amazon as part of its Amazon Prime subscription. Launched in 2006, Amazon Prime Video offers a wide range of movies, TV shows, and original content for users to enjoy. With over 200 million subscribers worldwide, it has become one of the most popular streaming services in the world.
+
+One of the key features of Amazon Prime Video is its vast library of movies and TV shows. The service offers a wide range of content in various genres, from popular TV shows like "The Marvelous Mrs. Maisel" and "The Boys" to classic movies like "The Godfather" and "The Shawshank Redemption." In addition, Amazon Prime Video has licensed content from various studios and networks, including HBO, Showtime, and CBS.
+
+Another feature that sets Amazon Prime Video apart from other streaming services is its focus on original content. The service has produced a number of critically acclaimed original series, including "Transparent," "Mozart in the Jungle," and "The Man in the High Castle." It has also produced original movies, including "Manchester by the Sea" and "The Big Sick." In addition, Amazon Prime Video has expanded its offerings to include live sports, with coverage of the NFL, NBA, and MLB.
+
+Like Netflix, Amazon Prime Video also offers personalized recommendations based on a user's viewing history and ratings. This helps users discover new content that they are likely to enjoy. In addition, Amazon Prime Video offers a feature called X-Ray, which provides information about the cast and crew of a movie or TV show, as well as trivia and other behind-the-scenes information.
+
+Amazon Prime Video also offers different subscription plans to suit the needs of different users. In addition to the standard Amazon Prime subscription, which includes access to Prime Video as well as other Amazon services like free shipping and music streaming, users can also choose to subscribe to Prime Video as a standalone service. This allows users to access Prime Video without having to subscribe to the full Prime service.
+
+One of the unique features of Amazon Prime Video is its integration with other Amazon services. For example, users can rent or buy movies and TV shows through Amazon Prime Video, or they can use Amazon's Alexa voice assistant to control their viewing experience. In addition, Amazon Prime Video has started offering a feature called Amazon Channels, which allows users to add premium networks like HBO and Showtime to their Amazon Prime Video subscription for an additional fee.
+
+Finally, Amazon Prime Video has also experimented with the way it releases content. Like Netflix, it has released entire seasons of TV shows at once, allowing viewers to binge-watch their favorite series. However, it has also released movies in theaters before making them available on Amazon Prime Video, which is a departure from the traditional streaming model.
+
+Overall, Amazon Prime Video has become a major player in the streaming market, offering a wide range of content and unique features for its subscribers. Its focus on original content, personalized recommendations, and integration with other Amazon services has made it a popular choice for viewers around the world
+
+
+
+
+
+
+
+
+\newpage
+  \section{snaps of our website}
+   \includegraphics[height=4in]{img1.jpg}
+    \includegraphics[height=4in]{img2.jpg}
+  \newpage
+    \section{snaps of our website}
+    \includegraphics[height=4in]{img3.jpg}
+    \includegraphics[height=4in]{img4.jpg}
+  \newpage
+    \section{snaps of our website}
+    \includegraphics[height=4in]{img5.jpg}
+    \includegraphics[height=4in]{img6.jpg}
+  \newpage
+    \section{snaps of our website}
+    \includegraphics[height=4in]{img7.jpg}
+    \includegraphics[height=4in]{img8.jpg}
+   \newpage
+    \section{snaps of our website}
+    \includegraphics[height=4in]{img9.jpg}
+      
+\newpage
+\section{History of movie websites }
+Movie websites have a relatively short but significant history, with the first movie-related website appearing in the mid-1990s. Here's a brief overview of the history of movie websites:
+
+Early years (mid-1990s): The first movie-related website, MovieLink, was launched in 1995, providing users with movie trailers, showtimes, and the ability to purchase tickets online. Other movie websites soon followed, including IMDb (Internet Movie Database), which launched in 1996 and quickly became a popular destination for movie lovers.
+
+Rise of online movie rentals (late 1990s-early 2000s): In the late 1990s and early 2000s, movie websites began offering online movie rentals and downloads. Websites such as Netflix (launched in 1997), Blockbuster Online (launched in 2004), and Amazon Prime Video (launched in 2006) gained popularity, allowing users to watch movies from the comfort of their own homes.
+
+Emergence of movie news and reviews (mid-2000s): In the mid-2000s, movie websites began offering more in-depth movie news and reviews, with websites such as Rotten Tomatoes (launched in 1998) and Metacritic (launched in 2001) providing users with aggregated movie reviews and ratings from various sources.
+
+Streaming revolution (mid-2010s): In the mid-2010s, the rise of streaming services such as Netflix, Hulu, and Amazon Prime Video changed the movie industry and the way people consume movies. Movie websites began offering streaming services, such as FandangoNOW and Vudu, allowing users to rent or buy movies digitally.
+
+Current trends (2020s): Today, movie websites continue to evolve, with many offering personalized recommendations, user-generated content, and interactive features. Social media has also become an important component of movie websites, with movie studios and filmmakers using platforms such as Twitter, Instagram, and TikTok to promote their movies and engage with fans.
+
+
+
+
+
+
+\newpage
+\section{Future Scope of movie websites }
+The future scope of movie websites is promising, as the demand for online entertainment continues to grow. Here are some potential areas of growth and development for movie websites:
+
+Personalization: Movie websites can further personalize the user experience by using advanced algorithms and data analysis to provide tailored recommendations to users. This can help users discover new movies they may be interested in and keep them engaged with the platform.
+
+Interactive content: Interactive content, such as quizzes, polls, and user-generated reviews, can help movie websites engage users and build a sense of community. This can also provide valuable feedback to the website owners and help improve the quality of the content.
+
+Virtual reality: As technology continues to advance, movie websites can leverage virtual reality (VR) and augmented reality (AR) to provide immersive movie experiences. For example, users may be able to watch movies in a virtual theater or interact with movie scenes in a more engaging way.
+
+Global expansion: Movie websites can expand their reach by entering new markets and providing localized content. This can help attract a more diverse audience and increase revenue streams.
+
+Original content: Movie websites can invest in producing their own original content to differentiate themselves from competitors and attract more users. This can also provide new opportunities for revenue generation, such as licensing deals and merchandising.
+
+Overall, the future scope of movie websites is bright, as there is a growing demand for online entertainment and new technologies are constantly emerging to enhance the user experience.
+\newpage
+\section{conclusion}
+In conclusion, movie websites play an important role in providing movie enthusiasts with easy access to a vast library of movies, TV shows, and other related content. They offer valuable features such as movie reviews, trailers, news, recommendations, and personalized content. With the continued growth of the online entertainment industry, movie websites have a bright future ahead of them, with potential areas of growth such as personalization, interactive content, virtual reality, global expansion, and original content. Overall, movie websites are a valuable resource for anyone who loves movies and wants to stay informed about the latest releases and industry news.
+
+
+
+
+
+
+
+
+\newpage
+\section{References}
+we mainly focussed on extracting our main data from API ,as we arer promising a dynamic website ,as we are promising ever changing result.bootstrap templates also came handy for us.
+some of the api we used are:
+\begin{itemize}
+    \item Imdb API 
+    \item Anime DB 
+    \item streaming availability
+    \item omdb API
+    \item free movies database
+\end{itemize}
+
+  
+\end{document}

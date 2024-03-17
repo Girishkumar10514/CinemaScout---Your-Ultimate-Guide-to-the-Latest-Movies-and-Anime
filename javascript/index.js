@@ -24,4 +24,12 @@ function toggle() {
   var popup = document.getElementById('popup');
   popup.classList.toggle('active');
 }
- 
+
+function toggleSidebar() {
+  var sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('active');
+  var arrowIcon = document.getElementById('arrow-icon');
+  arrowIcon.classList.toggle('rotate');
+}
+
+

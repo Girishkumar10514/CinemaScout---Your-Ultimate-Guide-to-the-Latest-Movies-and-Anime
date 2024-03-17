@@ -1,66 +1,103 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="./javascript/index.js" defer></script>
+    <script src="/javascript/indexSearch.js" defer></script>
     <!-- <link rel="stylesheet" href="./styleSearch.css"> -->
-    <title>WebReel</title>
-</head>
+    <title>CinemaScout</title>
+  </head>
 
-<body>
+  <body>
     <div class="navbar">
-        <div class="navbar-container">
-            <!-- title -->
+      <div class="navbar-container">
+        <!-- title -->
+        <div class="custom-font">CinemaScout</div>
+        <!-- links -->
+        <div class="navbar-links">
+          <!-- <li class="navbar-list-item"> -->
+          <div class="navbar-list-item">
+            <p>
+              <a href="./index.html" target="_main" class="nav-bar-anchor"
+                >Home</a
+              >
+            </p>
+          </div>
+          <div class="navbar-list-item">
+            <p>
+              <a
+                href="/html/movie/movieGenre.html"
+                target="_main"
+                class="nav-bar-anchor"
+                >Movies</a
+              >
+            </p>
+          </div>
+          <div class="navbar-list-item">
+            <p><a href="" target="_main" class="nav-bar-anchor">Series</a></p>
+          </div>
+          <div class="navbar-list-item">
+            <p>
+              <a
+                href="/html/animeGenre.html"
+                target="_main"
+                class="nav-bar-anchor"
+                >Anime</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+        <!-- <div class="arrow-container">
+            <i id="arrow-icon" class="fas fa-arrow-right" onclick="toggleSidebar()"></i>
+        </div> -->
+        <!-- Sidebar content -->
+        <div class="sidebar-items">
             <div>
-                <h1 c>WebReel</h1>
+                <a href="#" onclick="toggle()" style="color: black" id="blur">
+                    <i class="left-sidebar-icon fas fa-search sidebar-icon"></i>
+                </a>
             </div>
-            <!-- links -->
-            <div class="navbar-container">
-                <ul class="navbar-list">
-                    <li class="navbar-list-item">
-                        <p><a href="./index.html" target="_main" class="nav-bar-anchor">Home</a></p>
-                    </li>
-                    <li class="navbar-list-item">
-                        <p><a href="/html/movie/movieGenre.html" target="_main" class="nav-bar-anchor">Movies</a></p>
-                    </li>
-                    <li class="navbar-list-item">
-                        <p><a href="" target="_main" class="nav-bar-anchor">Series</a></p>
-                    </li>
-                    <li class="navbar-list-item">
-                        <p><a href="/html/animeGenre.html" target="_main" class="nav-bar-anchor">Anime</a></p>
-                    </li>
-
-                </ul>
+            <div>
+                <a href="./index.html" target="_main">
+                    <i class="left-sidebar-icon fas fa-home sidebar-icon"></i>
+                </a>
             </div>
         </div>
     </div>
-    <div class="sidebar">
-        <a href="#" onclick="toggle()" style="color:black" id="blur"><i
-                class="left-sidebar-icon fas fa-search  sidebar-icon"></i></a>
-        <!-- <i class="left-menu-icon fas fa-search  sidebar-icon"></i> -->
-        <a href="./index.html" target="_main"><i class="left-sidebar-icon fas fa-home  sidebar-icon"></i></a>
-        <!-- <i class="left-menu-icon fas fa-bookmark  sidebar-icon"></i> -->
-    </div>
+    
 
     <div>
-        <div id="popup">
-            <!-- search -->
-            <div class="search-input-wrap">
-                <div class="search-input i-wrap">
-                    <div class="search-input-item">
-                        <input type="text" value="" placeholder="Movie..." class="form-control" id="movie-search-box"
-                            onkeyup="findMovies()" onclick="findMovies()">
-                    </div>
+      <div id="popup">
+        <!-- search -->
+        <div class="search-input-wrap">
+          <div class="search-input i-wrap">
+            <div class="search-input-item">
+              <input
+                type="text"
+                value=""
+                placeholder="Movie..."
+                class="form-control"
+                id="movie-search-box"
+                onkeyup="findMovies()"
+                onclick="findMovies()"
+              />
+            </div>
 
-                    <button class="search-button" onclick="findMovies()">Search</button>
-                </div>
+            <button class="search-button" onclick="findMovies()">Search</button>
+          </div>
 
-                <div class="search-list" id="search-list">
-                    <!-- list here -->
-                    <!-- <div class = "search-list-item">
+          <div class="search-list" id="search-list">
+            <!-- list here -->
+            <!-- <div class = "search-list-item">
                             <div class = "search-item-thumbnail">
                                 <img src = "medium-cover.jpg">
                             </div>
@@ -69,314 +106,501 @@
                                 <p>2017</p>
                             </div>
                         </div> -->
-                </div>
+          </div>
 
-                <!-- cross -->
-            </div>
-            <div class="cross">
-                <a href="#" onclick="toggle()" id="cross-id">close</a>
-            </div>
+          <!-- cross -->
         </div>
+        <div class="cross">
+          <a href="#" onclick="toggle()" id="cross-id">close</a>
+        </div>
+      </div>
     </div>
     <div class="container">
-        <div class="content-container">
-            <!-- starting image -->
-            <div class="starting-content"
-                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
-                <!-- <img class="starting-title" src="img/f-t-1.png" alt=""> -->
-                <!-- <h2 class="title">
+      <div class="content-container">
+        <!-- starting image -->
+        <div
+          class="starting-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('img/f-1.jpg');
+          "
+        >
+          <!-- <img class="starting-title" src="img/f-t-1.png" alt=""> -->
+          <!-- <h2 class="title">
                     demon slayer
                 </h2>
                 <p class="starting-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
                     deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
                     minima voluptatibus incidunt. Accusamus, provident.</p>
                 <button class="starting-button">WATCH</button> -->
-            </div>
-
-            <!-- rest of things -->
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">Trending Now</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/trending/1.jpg" alt="">
-                            <span class="movie-list-item-title">Luther</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/trending/2.jpg" alt="">
-                            <span class="movie-list-item-title">Faraway</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/trending/3.jpg" alt="">
-                            <span class="movie-list-item-title">Hunger Games</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/trending/4.jpg" alt="">
-                            <span class="movie-list-item-title">We Have A Ghost</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/trending/5.jpg" alt="">
-                            <span class="movie-list-item-title">Turbo</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/trending/6.jpg" alt="">
-                            <span class="movie-list-item-title">Hunger Games</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/trending/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <!-- arrow -->
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">Hollywood</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/hollywood/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/hollywood/2.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/hollywood/3.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/hollywood/4.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/hollywood/5.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/hollywood/6.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/hollywood/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">Tollywood</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tollywood/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tollywood/2.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tollywood/3.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tollywood/4.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tollywood/5.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tollywood/6.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tollywood/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">TV Shows</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tv shows/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tv shows/2.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tv shows/3.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tv shows/4.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tv shows/5.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tv shows/6.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/tv shows/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
         </div>
+
+        <!-- rest of things -->
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Trending Now</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/trending/1.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Luther</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/trending/2.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Faraway</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/trending/3.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Hunger Games</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/trending/4.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">We Have A Ghost</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/trending/5.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Turbo</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/trending/6.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Hunger Games</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/trending/7.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+            </div>
+            <!-- arrow -->
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Hollywood</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/hollywood/1.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/hollywood/2.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/hollywood/3.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/hollywood/4.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/hollywood/5.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/hollywood/6.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/hollywood/7.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Tollywood</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tollywood/1.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tollywood/2.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tollywood/3.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tollywood/4.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tollywood/5.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tollywood/6.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tollywood/7.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">TV Shows</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tv shows/1.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tv shows/2.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tv shows/3.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tv shows/4.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tv shows/5.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tv shows/6.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="img/tv shows/7.jpg"
+                  alt=""
+                />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.
+                </p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./javascript/index.js"></script>
-    <script src="/javascript/indexSearch.js"></script>
+    
 
     <footer class="footer-container">
-        <div class="footer-left">
-            <h3><span>WebReel</span></h3>
-            <p class="footer-links">
-                <a href="#">Home</a>
-                |
-                <a href="/html/aboutUs.html">About</a>
-                |
-                <a href="/html/feedback.html">Feedback</a>
-            </p>
-            <p class="footer-company-name">Copyright © 2023 <strong>WebReel</strong> All rights reserved</p>
+      <div class="footer-left">
+        <h3><span>WebReel</span></h3>
+        <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="/html/aboutUs.html">About</a>
+          |
+          <a href="/html/feedback.html">Feedback</a>
+        </p>
+        <p class="footer-company-name">
+          Copyright © 2023 <strong>WebReel</strong> All rights reserved
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>Hyderabad, India</p>
         </div>
 
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p>Hyderabad, India</p>
-            </div>
-
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+91 6300528383, </p>
-                <p>+91 9381032520</p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:agkumar10514@gmail.com">agkumar10514@gmail.com</a></p>
-            </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 6300528383,</p>
+          <p>+91 9381032520</p>
         </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the website</span>
-                <strong>WebReel</strong> is a movie website which promises you a great user friendly experience.
-                It suggests the ott platform which can be accessed to stream movies.
-            </p>
-            <div class="footer-icons">
-                <a href="https://www.facebook.com/arugondagirish.kumar?mibextid=ZbWKwL" target="_main"><i
-                        class="fab fa-facebook-f icon"></i></a>
-                <a href="https://instagram.com/girish_arugonda?igshid=ZDdkNTZiNTM=" target="_main"><i
-                        class="fab fa-instagram icon"></i></a>
-                <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in icon" target="_main"></i></a>
-                <a href="https://twitter.com/Girishk51733627?t=N0onR4I6c3WaqITrkM6aFg&s=09" target="_main"><i
-                        class="fab fa-twitter icon"></i></a>
-                <a href="https://www.youtube.com/"><i class="fab fa-youtube icon" target="_main"></i></a>
-            </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:agkumar10514@gmail.com">agkumar10514@gmail.com</a>
+          </p>
         </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the website</span>
+          <strong>WebReel</strong> is a movie website which promises you a great
+          user friendly experience. It suggests the ott platform which can be
+          accessed to stream movies.
+        </p>
+        <div class="footer-icons">
+          <a
+            href="https://www.facebook.com/arugondagirish.kumar?mibextid=ZbWKwL"
+            target="_main"
+            ><i class="fab fa-facebook-f icon"></i
+          ></a>
+          <a
+            href="https://instagram.com/girish_arugonda?igshid=ZDdkNTZiNTM="
+            target="_main"
+            ><i class="fab fa-instagram icon"></i
+          ></a>
+          <a href="https://in.linkedin.com/"
+            ><i class="fab fa-linkedin-in icon" target="_main"></i
+          ></a>
+          <a
+            href="https://twitter.com/Girishk51733627?t=N0onR4I6c3WaqITrkM6aFg&s=09"
+            target="_main"
+            ><i class="fab fa-twitter icon"></i
+          ></a>
+          <a href="https://www.youtube.com/"
+            ><i class="fab fa-youtube icon" target="_main"></i
+          ></a>
+        </div>
+      </div>
     </footer>
-</body>
-
-
-
+  </body>
 </html>

@@ -161,7 +161,9 @@ body {
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
+    z-index: 9999; /* Adjust the z-index value as needed */
 }
+
 
 /* cross-searchbar */
 .cross{
@@ -176,7 +178,13 @@ body {
     text-decoration: none;
     font-weight: 400;
     color:white;
+    font-size: 20px;
 }
+.cross img {
+    width: 20px; /* Set width to fit the box */
+    height: 20px; /* Set height to fit the box */
+}
+
 
 /* search bar  */
 .search-input {
@@ -270,6 +278,10 @@ body {
 }
 
 
+.space{
+    top: 200px;
+}
+
 /* .starting-title {
     width: 200px;
 }
@@ -293,7 +305,7 @@ body {
 /* movies display */
 
 .movie-list-container {
-    padding-left:20px;
+    padding-left:60px;
 }
 
 .movie-list-wrapper {
@@ -312,14 +324,12 @@ body {
 .movie-list-item {
     margin-right: 30px;
     position: relative;
-    /* z-index:1; */
 }
 
 .movie-list-item:hover .movie-list-item-img {
-    transform: scale(1.2); /*expanding*/
+    transform: scale(1.2);
     margin: 0 30px;
-    opacity: 0.5;
-    /* z-index: 1; */
+    filter: brightness(50%); /* Darkens the image upon hovering */
 }
 
 .movie-list-item:hover .movie-list-item-title,
@@ -337,7 +347,6 @@ body {
 }
 
 .movie-list-item-title {
-    background-color: #333;
     padding: 0px 10px;
     font-size: 25px;
     font-weight: bold;
@@ -349,7 +358,6 @@ body {
 }
 
 .movie-list-item-desc {
-    background-color: rgba(51, 51, 51, 0.5);
     padding: 10px;
     font-size: 14px;
     position: absolute;
@@ -374,6 +382,7 @@ body {
     opacity: 0;
     transition: 1s all ease-in-out;
 }
+
 
 
 /* scrolling arrow part */
@@ -407,6 +416,7 @@ footer {
     text-align: left;
     padding: 50px 50px 60px 50px;
     margin-top: 0px;
+    padding-left:120px;
 }
 
 .footer-container .footer-left,
@@ -588,19 +598,18 @@ footer {
     color: var(--light-dark-color);
     width: 350px;
 }
-.search-list{
-    /* position: relative;
-    right: 50%;
-    top: 230%; */
-    max-height: 500px;
-    overflow-y: scroll;
-    /* z-index: 10; */
+
+.search-list {
+    max-height: 300px; /* Adjust the max height as needed */
+    overflow-y: auto; /* Use auto to show scrollbar only when needed */
+    width: 100%; /* Make the search list container width match the parent container, considering the width of search input and button */
+    
 }
 .search-list .search-list-item{
     background-color: var(--light-dark-color);
     padding: 0.5rem;
     border-bottom: 1px solid var(--dark-color);
-    width: calc(650px - 8px);
+    width: 90%;
     color: #fff;
     cursor: pointer;
     -webkit-transition: background-color 200ms ease;
@@ -645,6 +654,30 @@ footer {
     background-color: var(--yellow-color);
     outline: none;
     border-radius: 10px;
+}
+.search-input-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width:90%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+}
+
+
+
+.search-input-item {
+    width: 90%; /* Adjust the width as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.search-button {
+    width: 100px; /* Adjust the width as needed */
 }
 
 /* js related class */

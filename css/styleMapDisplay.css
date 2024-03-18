@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fallback background color */
+    background-image: url('https://img.freepik.com/free-vector/worldwide-global-map-outline-black-background_1017-46153.jpg?w=1380&t=st=1710757830~exp=1710758430~hmac=d0ed35ab65e86721f09592971c1a0e7babcbd76578c04ac11a1f3841806fe34d'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    font-family: Arial, sans-serif; /* Use Arial font for text */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.map-container {
+    background-color: white; /* White background for the map container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle border */
+    border: 2px solid #fff;
+    border-radius: 20px; /* Curved border with a 20px radius */
+    overflow: hidden; /* Hides overflow content to prevent overflow shadows */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* White box shadow for a subtle border */
+}
+
+.map-container iframe {
+    border: none; /* Remove iframe border */
+}

@@ -2,37 +2,7 @@
   margin: 0;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.social-link {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  border-radius: 50%;
-  transition: all 0.3s;
-  font-size: 0.9rem;
-}
-
-.social-link:hover,
-.social-link:focus {
-  background: #ddd;
-  text-decoration: none;
-  color: #555;
-}
-
-.row {
-  display: flex;
-  justify-content: space-around;
-}
-
 /* footer */
-
 footer {
   position: static;
   bottom: 0;
@@ -45,6 +15,7 @@ footer {
   text-align: left;
   padding: 50px 50px 60px 50px;
   margin-top: 0px;
+  padding-left: 120px;
 }
 
 .footer-container .footer-left,
@@ -52,6 +23,7 @@ footer {
 .footer-container .footer-right {
   display: inline-block;
   vertical-align: top;
+  /* kind of like jc */
 }
 
 /*left*/
@@ -62,10 +34,9 @@ footer {
 
 .footer-container h3 {
   color: #ffffff;
-  font: normal 36px 'Cookie', cursive;
+  font: normal 36px "Cookie", cursive;
   margin: 0;
 }
-
 
 .footer-container h3 span {
   color: red;
@@ -133,7 +104,6 @@ footer {
 .footer-container .footer-center p a {
   color: red;
   text-decoration: none;
-  ;
 }
 
 /*right*/
@@ -185,3 +155,22 @@ footer {
   position: relative;
   top: 25%;
 }
+
+body {
+  background-image: url("https://www.icolorpalette.com/download/solidcolorimage/4b57db_solid_color_background_icolorpalette.png"); /* Replace 'your-background-image.jpg' with the path to your background image */
+  background-size: cover;
+  color: #fff;
+}
+
+.textarea-container {
+  margin: 5% 20%;
+  padding: 5%;
+  border: 3px solid #2d2a30;
+  background-color: rgba(45, 42, 48, 0.8);
+  color: #fff;
+}
+
+.form-control {
+  background-color: #ffffff; /* Light background color for form controls */
+}
+

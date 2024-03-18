@@ -1,0 +1,50 @@
+body {
+  background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/powerpoint-cinema-background-design-template-f8795378be50233a9b188fd4ccfbeead_screen.jpg?ts=1698344870");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  height: 100vh; /* Ensure body takes up full height of viewport */
+}
+
+h2 {
+  font-family: Impact, sans-serif;
+  color: white;
+}
+
+.card.bg-warning.link {
+  color: white; /* Set text color for anchor tags */
+  font-size: 20px; /* Increased font size */
+  font-family: Arial, sans-serif; /* Readable font */
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(0, 77, 153); /* Dimmed dark blue */
+  transition: background-color 0.3s, transform 0.3s; /* Added transition for transform */
+}
+
+.card.bg-warning.link:hover {
+  background-color: navy; /* Brighter blue on hover */
+  transform: scale(1.05); /* Added hover effect to scale the card */
+}
+
+.card-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two columns with equal width */
+  gap: 10px; /* Gap between grid items */
+}
+
+/* Override default anchor tag color */
+.card.bg-warning.link a {
+  color: inherit;
+}
+
+div.card-body.text-center {
+  border-radius: 6px;
+  background-color: rgb(0, 128, 255);
+}
+
+p.card-text {
+  background-color: rgb(0, 128, 255);
+}

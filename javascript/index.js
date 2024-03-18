@@ -32,4 +32,18 @@ function toggleSidebar() {
   arrowIcon.classList.toggle('rotate');
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  var startingContent = document.querySelector('.starting-content');
+  var imageUrl = 'img/f-1.jpg'; // Default image URL
+
+  // Function to change background image dynamically
+  function changeBackgroundImage(url) {
+      startingContent.style.backgroundImage = "url('" + url + "')";
+  }
+
+  // Call changeBackgroundImage with the desired image URL
+  changeBackgroundImage(imageUrl);
+});
+
+
 

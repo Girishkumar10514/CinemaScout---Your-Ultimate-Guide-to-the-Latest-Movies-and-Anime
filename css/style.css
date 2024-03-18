@@ -137,8 +137,6 @@ body {
     width: 200px; /* Adjust width as needed when sidebar is active */
 }
 
-
-
 /* popup */
 
 #popup {
@@ -266,9 +264,13 @@ body {
 .starting-content {
     height: 50vh;
     padding: 50px;
+    top:10%;
+    background-size: cover;
+    background-position: center;
 }
 
-.starting-title {
+
+/* .starting-title {
     width: 200px;
 }
 
@@ -286,9 +288,9 @@ body {
     border: none;
     outline: none;
     font-weight: bold;
-}
+} */
 
-/* movie starts */
+/* movies display */
 
 .movie-list-container {
     padding-left:20px;

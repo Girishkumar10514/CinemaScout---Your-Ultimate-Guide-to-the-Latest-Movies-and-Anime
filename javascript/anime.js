@@ -1,108 +1,82 @@
-let container = document.querySelector(".container");
-// Retrieve the value from localStorage
-var myData2 = localStorage.getItem("myData2");
-console.log(myData2);
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the container element
+    const container = document.querySelector(".container");
 
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "6b258f4761msh0532fe3e780338bp1639cfjsn8d42ae8cbc1d",
-    "X-RapidAPI-Host": "anime-db.p.rapidapi.com",
-  },
-};
+    // Retrieve the value from localStorage
+    const myData2 = localStorage.getItem("myData2");
+    console.log(myData2);
 
-fetch(`https://anime-db.p.rapidapi.com/anime/by-id/${myData2}`, options)
-  .then((response) => response.json())
-  .then((response) => {
-    console.log(response);
+    if (!myData2) {
+        console.error("No data found in localStorage.");
+        return;
+    }
 
-    const keyword = response.title;
-    const encodedKeyword = encodeURIComponent(keyword);
-    const url = "https://zoro.to/search?keyword=" + encodedKeyword;
-    console.log(url);
+    // API request options
+    const options = {
+        method: "GET",
+        headers: {
+            "X-RapidAPI-Key": "6b258f4761msh0532fe3e780338bp1639cfjsn8d42ae8cbc1d",
+            "X-RapidAPI-Host": "anime-db.p.rapidapi.com",
+        },
+    };
 
-    // let genreArray = response.genres;
+    // Fetch anime data from the API
+    fetch(`https://anime-db.p.rapidapi.com/anime/by-id/${myData2}`, options)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok.");
+            }
+            return response.json();
+        })
+        .then(animeData => {
+            // Log the response for debugging
+            console.log(animeData);
 
-    container.innerHTML = `
+            // Construct the URL for watching the anime
+            const encodedKeyword = encodeURIComponent(animeData.title);
+            const url = `https://zoro.to/search?keyword=${encodedKeyword}`;
+            console.log(url);
+
+            // Generate HTML content for displaying anime details
+            container.innerHTML = `
                 <section class="movie-detail">
                     <div class="container">
-
                         <figure class="movie-detail-banner">
-
-                            <img src=${response.image} alt="">
-
-
+                            <img src="${animeData.image}" alt="${animeData.title}">
                         </figure>
-
                         <div class="movie-detail-content">
-
-                            <p class="detail-subtitle">Episodes : ${response.episodes}</p>
-
-                            <h1 class="h1 detail-title">
-                                ${response.title}
-                            </h1>
-
+                            <p class="detail-subtitle">Episodes: ${animeData.episodes}</p>
+                            <h1 class="h1 detail-title">${animeData.title}</h1>
                             <div class="meta-wrapper">
-
-                                <div class="ganre-wrapper">
-                                    <p>Genres: </p>
-                                    <p>${response.genres[0]}</p>
-                                    <p>${response.genres[1]}</p>
-
+                                <div class="genre-wrapper">
+                                    <p>Genres:</p>
+                                    <p>${animeData.genres.join(', ')}</p>
                                 </div>
-
                                 <div class="date-time">
-
                                     <div>
-                                        <p>Status: </p>
-
-                                        <p>${response.status}</p>
+                                        <p>Status:</p>
+                                        <p>${animeData.status}</p>
                                     </div>
-
                                     <div>
-                                        <p>Type: </p>
-
-                                        <p>${response.type}</p>
+                                        <p>Type:</p>
+                                        <p>${animeData.type}</p>
                                     </div>
-
                                 </div>
-
                             </div>
-
-                            <p class="storyline">
-                                ${response.synopsis}
-                            </p>
-
-                            <a alt="" href=${url}>
+                            <p class="storyline">${animeData.synopsis}</p>
+                            <a href="${url}" target="_blank" rel="noopener noreferrer">
                                 <button class="btn btn-primary">
                                     <ion-icon name="play"></ion-icon>
-
                                     <span>Watch Now</span>
                                 </button>
                             </a>
-
-
-
                         </div>
-
                     </div>
                 </section>
-
-                <!-- icon link -->
-
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        `;
-
-    // let genre1 = document.querySelector('.ganre-wrapper');
-
-    // let genre = document.createElement('p');
-    // for (var i = 0; i < genreArray.length; i++) {
-    //     genre.innerHTML=
-    //     `
-    //      <p>genreArray[i]</p>
-    //     `;
-    //     document.genre1.appendChild(genre);
-
-    // }
-  })
-  .catch((err) => console.error(err));
+            `;
+        })
+        .catch(error => {
+            console.error("Error fetching anime data:", error);
+        });
+});

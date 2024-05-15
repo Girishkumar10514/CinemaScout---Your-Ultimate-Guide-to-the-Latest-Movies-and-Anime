@@ -3,4 +3,5 @@
 
 PROJECT BY
 
-## Arugonda Girish Kumar and Narasimha Teja
+## Arugonda Girish Kumar 
+## Narasimha Teja

@@ -3,5 +3,4 @@
 
 PROJECT BY
 
-## 421111 - ARUGONDA GIRISH KUMAR
-## 421163 - NARASIMHA TEJA
+## Arugonda Girish Kumar and Narasimha Teja
